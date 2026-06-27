@@ -4,7 +4,7 @@ pipeline {
         stage('Clone') {
             steps {
                 git branch: 'main',
-                    credentialsId: 'github-creds',
+                    credentialsId: 'git-creds',
                     url: 'https://github.com/baludinakar2000-cmyk/sample-webapp.git'
             }
         }
